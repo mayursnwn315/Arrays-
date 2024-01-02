@@ -1,0 +1,72 @@
+﻿1.What is the default value of an array for different data types?
+
+
+Ans:For numeric types (int, double, float, etc.), the default value is 0.
+For boolean type, the default value is false.
+For char type, the default value is '\u0000' (null character).
+For object references (arrays are objects in Java), the default value is null.
+
+
+2.Can you pass a negative number in Array size?
+
+
+Ans:No, you cannot pass a negative number as the size of an array in Java. The size of an array must be a non-negative integer.
+
+
+3.Where does an array stored in JVM memory?
+
+
+Ans:Arrays in Java are stored in the heap memory, which is a region of memory used for dynamic memory allocation.
+
+
+4.What are the disadvantages of arrays?
+
+
+Ans:Fixed Size: Arrays have a fixed size that is determined at the time of creation, making it challenging to dynamically change their size.
+Inefficient Insertion/Deletion: Inserting or deleting elements in the middle of an array can be inefficient as it requires shifting elements.
+Homogeneous Data Types: Arrays store elements of the same data type, which can be limiting in certain situations.
+
+
+5.What is an Anonymous array in Java? Give an example.
+
+
+Ans:An anonymous array in Java is an array without a name, typically used for one-time purposes.
+Example:
+java
+Copy code
+int sum = 0;
+sumArray(new int[]{1, 2, 3, 4, 5});
+
+
+// Method to sum elements of an array
+static void sumArray(int[] arr) {
+    for (int num : arr) {
+        sum += num;
+    }
+    System.out.println("Sum: " + sum);
+}
+
+
+6.What are the different ways to traverse an array in Java?
+
+
+Ans:For Loop, Enhanced For Loop (for-each), and Using Streams (Java 8 and later).
+
+
+7.What is the difference between length and length() method? Give an example.
+
+
+Ans:length: Property of arrays to find their size.
+
+
+java
+Copy code
+int[] arr = {1, 2, 3, 4, 5};
+int arrayLength = arr.length;
+length(): Method used for finding the length of strings.
+
+
+java
+Copy code
+String str = "Hello";
+int stringLength = str.length();
